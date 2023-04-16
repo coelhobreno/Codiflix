@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/favicon" href="imagens/netflixicone.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodiFlix</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="nav" id="nav">
+            <img src="imagens/tela-vermelha.png" alt="" class="nav__logo">
+            <img src="imagens/tela-vermelha.png" alt="" class="nav__avatar">
+        </div>
+
+        <header class="banner">
+            <div class="banner__contents">
+                <h1 class="banner__title">La Casa de Papel</h1>
+                <div class="banner__buttons">
+                    <button class="banner__button">Assistir</button>
+                    <button class="banner__button">Minha Lista</button>
+
+                    <h1 class="banner__description">
+                        Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano.
+                        Será o maior roubo da história, ou uma missão em vão?
+                    </h1>
+                </div>
+            </div>
+            <div class="banner--fadeBottom"></div>
+        </header>
+
+        <div class="row">
+            <h2>ORIGINAIS NETFLIX</h2>
+            
+            <div class="row__posters">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+                <img class="row__poster row__posterLarge" src="imagens/serie_original.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Novidades</h2>
+            <div class="row__posters">
+                <img src="imagens/serienoriginal.jpg"class="row__poster" alt="" >
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Aclamados pela crítica</h2>
+            <div class="row__posters">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Terror</h2>
+            <div class="row__posters">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Comédia</h2>
+            <div class="row__posters">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Ação</h2>
+            <div class="row__posters">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+                <img src="imagens/serienoriginal.jpg" class="row__poster" alt="">
+            </div>
+        </div>
+
+
+        <!-- Parte JS: Aparecer fundo na nav ao rolar -->
+
+        <script>
+            const nav = document.getElementById("nav");
+
+            addEventListener("scroll", ()=>{
+                if(scrollY >= 100){
+                    nav.classList.add("nav__black");
+                }else{
+                    nav.classList.remove("nav__black");
+                }
+            })
+        </script>
+    </body>
+</html>
